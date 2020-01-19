@@ -32,4 +32,5 @@ with open(input_config_name) as input_config:
             cursor.execute("""UPDATE Products
             SET quantity = ? WHERE id = ?""", [int(line[1]) + current_quantity, int(line[0])])
 
+
 printdb.print_db(connect)

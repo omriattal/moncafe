@@ -50,10 +50,11 @@ def print_db(connection):
             ORDER BY date
     """)
 
-    print("\nActivities")
-    for record in cursor.fetchall():
-        print(record)
-
+    fetchall = cursor.fetchall()
+    if len(fetchall) > 0:
+        print("\nActivities")
+        for record in fetchall:
+            print(record)
 
 
 if __name__ == '__main__':
