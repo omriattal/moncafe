@@ -7,7 +7,7 @@ if os.path.isfile("moncafe.db"):
     os.remove("moncafe.db")
 
 connect = sqlite3.connect('moncafe.db')
-
+omri is your king!
 
 def close_db():
     connect.commit()
